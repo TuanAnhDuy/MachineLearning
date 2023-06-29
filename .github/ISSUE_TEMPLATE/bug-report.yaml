@@ -1,0 +1,81 @@
+name: Thông báo Lỗi
+description: Tạo một báo cáo để cải thiện chất lượng dự án
+title: "[Bug]: "
+labels: [internal: bug, ]
+assignees:
+  - duythanhvn
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Cảm ơn bạn đã dành thời gian giúp chúng tôi cải thiện chất lượng dự án này!
+
+        **Trước khi bạn tạo một Issue**, vui lòng đảm bảo rằng bạn đã sử dụng phiên bản mới nhất của mã nguồn dự án cũng như thư viện đã cài đặt. Vui lòng xem thêm [tại đây](https://github.com/mlbvn/handson-ml2-vn/blob/main/install.md#c%E1%BA%ADp-nh%E1%BA%ADt-d%E1%BB%B1-%C3%A1n--c%C3%A1c-th%C6%B0-vi%E1%BB%87n-c%E1%BB%A7a-n%C3%B3).
+
+        Ngoài ra, hãy đảm bảo bạn đã xem qua phần [Câu hỏi thường gặp (FAQ)](https://github.com/mlbvn/handson-ml2-vn#c%C3%A2u-h%E1%BB%8Fi-th%C6%B0%E1%BB%9Dng-g%E1%BA%B7p-faq) và tự tìm kiếm câu trả lời cho vấn đề của mình, vì có thể câu hỏi của bạn đã được trả lời trong [Github Discussions](https://github.com/mlbvn/handson-ml2-vn/discussions).
+  - type: input
+    id: bug-info
+    attributes:
+      label: Mô tả lỗi
+      description: Vui lòng mô tả rõ ràng và ngắn gọn về lỗi, đồng thời nêu rõ tên Jupyter Notebooks và số ô gặp sự cố (hoặc chương và trang trong sách).
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce-code
+    attributes:
+      label: Tái hiện lỗi
+      description: Vui lòng sao chép đoạn mã lỗi vào đây
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce-exception
+    attributes:
+      label: Tái hiện lỗi
+      description: Nếu bạn có exception, vui lòng sao chép toàn bộ stacktrace vào đây
+      render: shell
+  - type: input
+    id: os
+    attributes:
+      label: Hệ điều hành
+    validations:
+      required: true
+  - type: input
+    id: python
+    attributes:
+      label: Python
+    validations:
+      required: true
+  - type: input
+    id: tf
+    attributes:
+      label: TensorFlow
+    validations:
+      required: false
+  - type: input
+    id: sl
+    attributes:
+      label: Scikit-Learn
+    validations:
+      required: false
+  - type: input
+    id: keras
+    attributes:
+      label: Keras
+    validations:
+      required: false
+  - type: input
+    id: others-lib
+    attributes:
+      label: Các thư viện khác
+      description: Những thư viện có thể được kết nối với sự cố
+    validations:
+      required: false
+  - type: textarea
+    id: figs-context
+    attributes:
+      label: Ảnh chụp màn hình & Thông tin bổ sung
+      description: Hãy cung cấp thêm thông tin về bối cảnh vấn đề cũng như đính kèm ảnh chụp màn hình tại đây
+    validations:
+      required: true
+
